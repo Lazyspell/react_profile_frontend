@@ -1,0 +1,30 @@
+.work-container {
+    position: fixed;
+    left: 175px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.929);
+    height: 100%;
+    top: 0;
+
+    .work-left {
+        height: 100%;
+        float: left;
+        display: grid;
+        padding: 15px;
+        width: 45%;
+        overflow: auto;
+    }
+
+    .work-right {
+        height: 100%;
+        float: left;
+        display: grid;
+        border: 10px solid rgba(106, 0, 255, 0.356);
+        width: 45%;
+        overflow: auto;
+
+        .salt {
+            display: grid;
+        }
+    }
+}

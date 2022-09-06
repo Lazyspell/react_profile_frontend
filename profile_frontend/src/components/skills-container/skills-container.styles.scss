@@ -1,0 +1,40 @@
+.skill-container {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    min-height: 650px;
+}
+
+.skills-test {
+    border: 15px solid red;
+    display: flex;
+}
+
+.skill-description {
+    float: right;
+}
+
+.skill-div {
+    width: 1200px;
+    margin: 20px;
+    overflow: auto;
+    max-height: 650;
+    display: flex;
+    // .skill-inner-1{
+
+    // }
+    p {
+        color: white;
+    }
+    .category {
+        width: 425px;
+    }
+}
+
+.skill-title {
+    color: white;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+}
