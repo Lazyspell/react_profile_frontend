@@ -22,17 +22,17 @@ const skills = " My Skills";
 const Navigation = () => {
     const { contact } = useContext(ProfileContext);
     const { github, linkedin, discord } = contact;
-    const navigateToGit = () => {
-        window.open(github);
-    };
+    // const navigateToGit = () => {
+    //     window.open(github);
+    // };
 
-    const navigateToLinkedIn = () => {
-        window.open(linkedin);
-    };
+    // const navigateToLinkedIn = () => {
+    //     window.open(linkedin);
+    // };
 
-    const navigateToDiscord = () => {
-        window.open(discord);
-    };
+    // const navigateToDiscord = () => {
+    //     window.open(discord);
+    // };
     return (
         <>
             <Navbar className="home">
