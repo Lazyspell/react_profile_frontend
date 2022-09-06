@@ -10,8 +10,8 @@ import { Link, Outlet } from "react-router-dom";
 // } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 import "./navigation.styles.scss";
-import { useContext } from "react";
-import { ProfileContext } from "../../contexts/profile.context";
+// import { useContext } from "react";
+// import { ProfileContext } from "../../contexts/profile.context";
 
 const home = " Home";
 const about = " About";
@@ -20,8 +20,8 @@ const contactString = " Contact";
 const skills = " My Skills";
 
 const Navigation = () => {
-    const { contact } = useContext(ProfileContext);
-    const { github, linkedin, discord } = contact;
+    // const { contact } = useContext(ProfileContext);
+    // const { github, linkedin, discord } = contact;
     // const navigateToGit = () => {
     //     window.open(github);
     // };
