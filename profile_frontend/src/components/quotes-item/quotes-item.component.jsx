@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 export const QuoteItem = ({ inputQuotes }) => {
-    const { saying, source, source_link } = inputQuotes;
+    const { saying, source } = inputQuotes;
 
     return (
         <Card sx={{ maxWidth: 700 }} style={{ backgroundColor: "black" }}>

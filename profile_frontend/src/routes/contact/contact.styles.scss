@@ -1,0 +1,68 @@
+.contact-container {
+    position: fixed;
+    left: 175px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.929);
+    top: 0;
+}
+
+.split {
+    height: 100%;
+    width: 43.75%;
+    top: 0;
+    overflow-x: auto;
+}
+
+.contact-left {
+    padding: 15px;
+    width: 45%;
+    height: 100%;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+
+.contact-right {
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    overflow: auto;
+}
+
+.contact-center-left {
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+}
+
+.forum-input {
+    background-color: white;
+}
+
+.contact-text-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-subject-field {
+    padding: 10px 0px 0px 0px; //top right bottom left
+}
+
+.contact-text-field {
+    padding: 10px 0px 0px 0px; //top right bottom left
+}
+
+.contact-button {
+    padding: 10px;
+    width: 100%;
+    float: right;
+}
+
+.contact-left-text {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 120%;
+}
