@@ -1,0 +1,19 @@
+.tagcloud {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    color: rgb(102, 53, 148);
+    text-shadow: 2px 2px 4px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tagcloud--item:hover {
+    color: white;
+}
+
+.cloudSphere-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

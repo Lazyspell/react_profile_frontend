@@ -1,0 +1,106 @@
+.about-main-container {
+    position: fixed;
+    left: 175px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.929);
+    top: 0;
+}
+
+.leftSide,
+.rightSide {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 43.75%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    left: 200px;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.test {
+    position: absolute;
+}
+
+.adjust-center {
+    top: 5%;
+    // border: 1px solid rgb(170, 0, 255);
+    width: 99%;
+    right: 1px;
+    height: 60%;
+    overflow: auto;
+}
+.about-test {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.text-header {
+    color: white;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    font-size: 500%;
+}
+
+.text-message {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 150%;
+}
+
+.about-header {
+    display: flex;
+    width: 95%;
+    float: right;
+}
+
+.about-message {
+    display: flex;
+    width: 90%;
+    float: right;
+}
+
+.about-quotes-container {
+    height: 300px;
+    color: white;
+    position: absolute;
+    bottom: 6;
+    width: 100%;
+    background-color: black;
+}
