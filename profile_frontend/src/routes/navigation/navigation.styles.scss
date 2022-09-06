@@ -1,0 +1,68 @@
+.navi-bar {
+    height: 100%;
+    width: 175px;
+    position: fixed;
+    float: right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+
+    transition: 0.5s;
+    color: black;
+    box-shadow: 2px 3px 5px #220137;
+}
+
+.nav-space {
+    height: 37%;
+}
+
+.spaces {
+    height: 10rem;
+}
+
+.sig {
+    height: 15rem;
+    transform: skewY(-20deg);
+}
+
+.card {
+    border: none;
+    width: 100%;
+}
+
+.link {
+    color: rgb(102, 53, 148);
+    background-color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: rgb(102, 53, 148);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.li {
+    border: none;
+}
+
+.spacing {
+    height: 50%;
+}
+
+.social {
+    height: 100%;
+    bottom: 10px;
+}
+
+.list.list-group-item {
+    background-color: black;
+}
+
+.home.navbar.navbar-expand.navbar-light {
+    background-color: rgba(10, 10, 10, 0.929);
+    width: 175px;
+}
