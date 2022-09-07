@@ -3,11 +3,10 @@ import { ProfileContext } from "../../contexts/profile.context";
 import { useContext } from "react";
 
 import "./work.styles.scss";
+import { ProjectContainer } from "../../components/project-container/project-container.component";
 
 export const Work = () => {
-    const { experience } = useContext(ProfileContext);
-
-    // console.log(experience[0].tech_used);
+    const { experience, projects } = useContext(ProfileContext);
 
     return (
         <>
@@ -19,7 +18,9 @@ export const Work = () => {
                     />
                 </div>
                 <div className="work-right">
-                    <div className="salt"></div>
+                    <div className="salt">
+                        <ProjectContainer projects={projects} />
+                    </div>
                 </div>
             </div>
         </>
