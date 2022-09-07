@@ -66,6 +66,7 @@ export const GET_PROFILE_BY_ID = gql`
                 frontend_description
                 backend_link
                 backend_description
+                tech_used
             }
             contact {
                 phone_number
