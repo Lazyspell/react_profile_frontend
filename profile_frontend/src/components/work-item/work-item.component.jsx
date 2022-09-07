@@ -2,6 +2,7 @@ import "./work-item.styles.scss";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { AnimatedSphere } from "../animation/cloudSphere/cloudSphere.component";
+import { TechList } from "../tech-list/tech-list.component";
 
 export const WorkItem = ({ inputWork }) => {
     const { company_name, years_worked, work_description, tech_used } =
@@ -52,7 +53,7 @@ export const WorkItem = ({ inputWork }) => {
                             style={{ backgroundColor: "black" }}
                         >
                             Technology Used:{tech_used.length}
-                            <AnimatedSphere techList={tech_used} radius={150} />
+                            <TechList technologies={tech_used} />
                         </Typography>
                     </div>
                 </div>
