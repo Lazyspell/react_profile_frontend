@@ -67,7 +67,7 @@ export const EmailForum = () => {
                     onChange={emailChange}
                     value={email}
                 />
-                ;
+                .
             </div>
             <div className="contact-subject-field">
                 <TextField
