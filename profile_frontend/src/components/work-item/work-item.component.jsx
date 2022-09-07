@@ -1,14 +1,11 @@
 import "./work-item.styles.scss";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import { AnimatedSphere } from "../animation/cloudSphere/cloudSphere.component";
 import { TechList } from "../tech-list/tech-list.component";
 
 export const WorkItem = ({ inputWork }) => {
     const { company_name, years_worked, work_description, tech_used } =
         inputWork;
-
-    console.log(tech_used);
 
     return (
         <div className="main-work-item">
