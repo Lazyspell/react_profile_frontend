@@ -7,12 +7,18 @@ export const WorkItem = ({ inputWork }) => {
     const { company_name, years_worked, work_description, tech_used } =
         inputWork;
 
+    const cardStyle = {
+        display: "block",
+        transitionDuration: "0.3s",
+        height: "300px",
+        backgroundColor: "black",
+        overflow: "hidden",
+        overflowY: "scroll", // added scroll
+    };
+
     return (
         <div className="main-work-item">
-            <Card
-                sx={{ maxWidth: "100%" }}
-                style={{ backgroundColor: "black" }}
-            >
+            <Card style={cardStyle}>
                 <div className="work-card">
                     <div className="work-item-left">
                         <Typography
