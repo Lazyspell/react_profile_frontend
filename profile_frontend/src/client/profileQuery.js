@@ -62,10 +62,8 @@ export const GET_PROFILE_BY_ID = gql`
             }
             projects {
                 project_name
-                frontend_link
-                frontend_description
-                backend_link
-                backend_description
+                project_description
+                project_links
                 tech_used
             }
             contact {
