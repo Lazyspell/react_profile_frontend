@@ -1,27 +1,26 @@
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { TechList } from "../tech-list/tech-list.component";
+import { sizing } from "@mui/system";
 
 import "./project-item.styles.scss";
 
 export const ProjectItem = ({ inputWork }) => {
-    const {
-        project_name,
-        frontend_link,
-        frontend_description,
-        backend_link,
-        backend_description,
-        tech_used,
-    } = inputWork;
+    const { project_name, project_description, project_links, tech_used } =
+        inputWork;
 
-    console.log(tech_used);
+    const cardStyle = {
+        display: "block",
+        transitionDuration: "0.3s",
+        height: "300px",
+        backgroundColor: "black",
+        overflow: "hidden",
+        overflowY: "scroll", // added scroll
+    };
 
     return (
         <div className="main-project-item">
-            <Card
-                sx={{ maxWidth: "100%" }}
-                style={{ backgroundColor: "black" }}
-            >
+            <Card style={cardStyle}>
                 <div className="project-card">
                     <div className="project-item-left">
                         <Typography
@@ -39,16 +38,8 @@ export const ProjectItem = ({ inputWork }) => {
                             color="white"
                             style={{ backgroundColor: "black" }}
                         >
-                            Frontend Description: {frontend_description}
-                        </Typography>
-
-                        <Typography
-                            variant="body"
-                            component="div"
-                            color="white"
-                            style={{ backgroundColor: "black" }}
-                        >
-                            Frontend Link: {frontend_link}
+                            <h5>Project Description:</h5>
+                            {project_description}
                         </Typography>
                         <Typography
                             variant="body"
@@ -56,16 +47,8 @@ export const ProjectItem = ({ inputWork }) => {
                             color="white"
                             style={{ backgroundColor: "black" }}
                         >
-                            Backend Description: {backend_description}
-                        </Typography>
-
-                        <Typography
-                            variant="body"
-                            component="div"
-                            color="white"
-                            style={{ backgroundColor: "black" }}
-                        >
-                            Backend Link: {backend_link}
+                            GitHub Links:
+                            <TechList technologies={project_links} />
                         </Typography>
                     </div>
                     <div className="project-item-right">
