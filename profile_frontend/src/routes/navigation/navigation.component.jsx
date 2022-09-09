@@ -4,7 +4,6 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { VscGithubInverted } from "react-icons/vsc";
 import { GrLinkedin } from "react-icons/gr";
-import { SiDiscord } from "react-icons/si";
 
 import {
     solid,
@@ -136,20 +135,16 @@ const Navigation = () => {
 
                     <ListGroupItem className="list">
                         <VscGithubInverted
-                            className="link"
+                            className="link-2"
                             onClick={navigateToGit}
                         />
                         {"   "}
 
                         <GrLinkedin
-                            className="link"
+                            className="link-2"
                             onClick={navigateToLinkedIn}
                         />
                         {"   "}
-                        <SiDiscord
-                            className="link"
-                            onClick={navigateToDiscord}
-                        />
                     </ListGroupItem>
                 </ListGroup>
             </Navbar>
