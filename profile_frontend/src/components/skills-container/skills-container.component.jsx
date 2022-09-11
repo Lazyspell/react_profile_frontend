@@ -26,7 +26,9 @@ export const SkillsContainer = ({ skills }) => {
                     </div>
                     <div>
                         <h1>Experience</h1>
-                        <p>{item[0].category_description}</p>
+                        <p className="skills-container-description">
+                            {item[0].category_description}
+                        </p>
                     </div>
                 </div>
             ))}

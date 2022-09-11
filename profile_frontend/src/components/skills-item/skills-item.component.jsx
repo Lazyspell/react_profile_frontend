@@ -10,6 +10,15 @@ import { Button } from "../button/button.component";
 export const SkillItem = ({ inputSkills }) => {
     const { tech_name, years_of_experience, tech_description, image_url } =
         inputSkills;
+
+    const cardStyle = {
+        display: "block",
+        transitionDuration: "0.3s",
+        height: "300px",
+        backgroundColor: "black",
+        overflow: "hidden",
+        overflowY: "scroll", // added scroll
+    };
     return (
         <Card sx={{ maxWidth: 400 }} style={{ backgroundColor: "black" }}>
             <CardMedia
