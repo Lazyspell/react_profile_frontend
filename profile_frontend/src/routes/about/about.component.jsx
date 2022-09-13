@@ -5,9 +5,8 @@ import { ProfileContext } from "../../contexts/profile.context";
 import { QuotesContainer } from "../../components/quotes-container/quotes-container.component";
 
 export const About = () => {
-    const { contact } = useContext(ProfileContext);
-    const { about_my_career } = contact;
-    const { quotes } = useContext(ProfileContext);
+    const { contact, quotes } = useContext(ProfileContext);
+    const { about_my_career, linkedin, github } = contact;
     const myTags = [
         "JavaScript",
         "CSS",
@@ -32,12 +31,28 @@ export const About = () => {
         "AWS",
         "Azure",
     ];
+
+    const toLinkedin = () => {
+        window.open(linkedin);
+    };
+    const toGithub = () => {
+        window.open(github);
+    };
+
     return (
         <>
             <div className="about-main-container">
                 <div className="split left">
                     <div className="about-title-container">
                         <h1 className="text-header">Me, Myself, & I</h1>
+                    </div>
+                    <div>
+                        <h5 className="leftWord" onClick={toGithub}>
+                            GitHub
+                        </h5>
+                        <h5 className="rightWord" onClick={toLinkedin}>
+                            LinkedIn
+                        </h5>
                     </div>
                     <div className="adjust-center">
                         <div className="about-message">
