@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import { TechList } from "../tech-list/tech-list.component";
 
 export const WorkItem = ({ inputWork }) => {
-    const { company_name, years_worked, work_description, tech_used } =
+    const { company_name, years_worked, work_description, tech_used, role } =
         inputWork;
 
     const cardStyle = {
@@ -29,7 +29,14 @@ export const WorkItem = ({ inputWork }) => {
                         >
                             {company_name}
                         </Typography>
-
+                        <Typography
+                            variant="body"
+                            component="div"
+                            color="white"
+                            style={{ backgroundColor: "black" }}
+                        >
+                            Role: {role}
+                        </Typography>
                         <Typography
                             variant="body"
                             component="div"
@@ -45,7 +52,13 @@ export const WorkItem = ({ inputWork }) => {
                             color="white"
                             style={{ backgroundColor: "black" }}
                         >
-                            Description: {work_description}
+                            <h5>Description:</h5>
+                            <div
+                                className="work-container-description"
+                                dangerouslySetInnerHTML={{
+                                    __html: work_description,
+                                }}
+                            />
                         </Typography>
                     </div>
                     <div className="work-item-right">
