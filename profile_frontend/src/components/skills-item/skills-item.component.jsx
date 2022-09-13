@@ -8,8 +8,13 @@ import Typography from "@mui/material/Typography";
 import { Button } from "../button/button.component";
 
 export const SkillItem = ({ inputSkills }) => {
-    const { tech_name, years_of_experience, tech_description, image_url } =
-        inputSkills;
+    const {
+        tech_name,
+        years_of_experience,
+        tech_description,
+        image_url,
+        tech_link,
+    } = inputSkills;
 
     const cardStyle = {
         display: "block",
@@ -19,6 +24,11 @@ export const SkillItem = ({ inputSkills }) => {
         overflow: "hidden",
         overflowY: "scroll", // added scroll
     };
+
+    const techLink = () => {
+        window.open(tech_link);
+    };
+
     return (
         <Card sx={{ maxWidth: 400 }} style={{ backgroundColor: "black" }}>
             <CardMedia
@@ -56,7 +66,7 @@ export const SkillItem = ({ inputSkills }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button>Learn More</Button>
+                <Button onClick={techLink}>Learn More</Button>
             </CardActions>
         </Card>
     );
