@@ -78,6 +78,7 @@ export const GET_PROFILE_BY_ID = gql`
             experience {
                 company_name
                 years_worked
+                role
                 work_description
                 tech_used
             }
