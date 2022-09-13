@@ -26,9 +26,12 @@ export const SkillsContainer = ({ skills }) => {
                     </div>
                     <div>
                         <h1>Experience</h1>
-                        <p className="skills-container-description">
-                            {item[0].category_description}
-                        </p>
+                        <div
+                            className="skills-container-description"
+                            dangerouslySetInnerHTML={{
+                                __html: item[0].category_description,
+                            }}
+                        />
                     </div>
                 </div>
             ))}
