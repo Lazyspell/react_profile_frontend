@@ -39,7 +39,12 @@ export const ProjectItem = ({ inputWork }) => {
                             style={{ backgroundColor: "black" }}
                         >
                             <h5>Project Description:</h5>
-                            {project_description}
+                            <div
+                                className="work-container-description"
+                                dangerouslySetInnerHTML={{
+                                    __html: project_description,
+                                }}
+                            />
                         </Typography>
                         <Typography
                             variant="body"
