@@ -47,7 +47,7 @@ export const ProjectItem = ({ inputWork }) => {
                             color="white"
                             style={{ backgroundColor: "black" }}
                         >
-                            GitHub Links:
+                            <h5>GitHub Links:</h5>
                             <TechList technologies={project_links} />
                         </Typography>
                     </div>
