@@ -17,7 +17,6 @@
 }
 
 .skill-div {
-    width: 1200px;
     margin: 20px;
     overflow: auto;
     max-height: 650;
@@ -41,5 +40,9 @@
 
 .skills-container-description {
     font-size: 25px;
-    padding-left: 35px;
+    padding-left: 40px;
+    color: white;
+    overflow: scroll;
+    height: 650px;
+    width: 80%;
 }

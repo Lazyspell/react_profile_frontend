@@ -7,10 +7,25 @@
     top: 0;
 }
 
-.leftSide,
-.rightSide {
-    height: 100vh;
-    width: 100%;
+.rightWord {
+    font-family: "Oswald", sans-serif;
+    float: left;
+    color: blue;
+    padding: 5px;
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
+.leftWord {
+    font-family: "Oswald", sans-serif;
+    float: left;
+    color: blue;
+    padding: 5px;
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
 }
 
 /* Split the screen in half */
