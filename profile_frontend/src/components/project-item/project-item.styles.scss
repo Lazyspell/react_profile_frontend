@@ -5,9 +5,11 @@
         float: right;
         display: grid;
         width: 30%;
-        overflow: scroll;
+        overflow: hidden;
         padding: 15px;
         padding: 20px;
+    }
+    .example::-webkit-scrollbar {
         display: none;
     }
 
@@ -16,8 +18,7 @@
         float: left;
         display: grid;
         width: 70%;
-        overflow: scroll;
+        overflow: hidden;
         padding: 15px;
-        display: none;
     }
 }

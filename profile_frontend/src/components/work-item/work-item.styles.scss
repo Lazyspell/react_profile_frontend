@@ -19,12 +19,11 @@
 .work-container-description {
     padding: 5px;
     color: white;
-    overflow: scroll;
+    overflow: hidden;
     width: 100%;
     &.ul {
         width: 100%;
     }
-    display: none;
 }
 
 .main-work-item {
