@@ -12,7 +12,7 @@ export const WorkItem = ({ inputWork }) => {
         transitionDuration: "0.3s",
         height: "300px",
         backgroundColor: "black",
-        overflow: "hidden",
+        overflow: "auto",
         overflowY: "scroll", // added scroll
     };
 

@@ -5,7 +5,7 @@
         float: right;
         display: grid;
         width: 30%;
-        overflow: hidden;
+        overflow: auto;
         padding: 15px;
         padding: 20px;
     }
@@ -18,7 +18,7 @@
         float: left;
         display: grid;
         width: 70%;
-        overflow: hidden;
+        overflow: auto;
         padding: 15px;
     }
 }
